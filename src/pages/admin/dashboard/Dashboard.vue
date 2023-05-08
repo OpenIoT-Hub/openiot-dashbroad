@@ -1,7 +1,7 @@
 <template>
   <div class="dashboard">
-    <dashboard-charts />
-
+    <!-- <dashboard-charts /> -->
+    <DashboardCharts></DashboardCharts>
     <dashboard-info-block />
 
     <div class="row row-equal">

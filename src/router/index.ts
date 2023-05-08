@@ -10,7 +10,19 @@ import UIRoute from '../pages/admin/ui/route'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
-    redirect: { name: 'dashboard' },
+    redirect: { name: 'workSpace' },
+  },
+  {
+    name:'homePage',
+    path:'/homePage',
+    component:AppLayout,
+    children:[
+      {
+        name:'workSpace',
+        path:'workSpace',
+        component:() => import('../pages/homePage/workSpace.vue')
+      }
+    ]
   },
   {
     name: 'admin',

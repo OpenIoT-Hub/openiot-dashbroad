@@ -125,6 +125,7 @@
     &__page {
       flex-grow: 2;
       overflow-y: scroll;
+      background-color: #F5F6F9;
     }
   }
 </style>

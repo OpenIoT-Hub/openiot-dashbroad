@@ -1,5 +1,3 @@
-
-
 ### Documentation
 
 Documentation, guides and tutorials are available
@@ -62,7 +60,6 @@ $ yarn build --report
 ```
 
 ### Features
-
 
 ### License
 
