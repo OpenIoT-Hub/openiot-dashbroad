@@ -12,17 +12,17 @@ export default {
   },
   routes: [
     {
-      name:'homePage',
-      displayName:'Home',
-      meta:{
-        icon:'vuestic-iconset-dashboard'
+      name: 'homePage',
+      displayName: 'Home',
+      meta: {
+        icon: 'vuestic-iconset-dashboard',
       },
-      children:[
+      children: [
         {
-          name:'workSpace',
-          displayName:'workSpace'
-        }
-      ]
+          name: 'workSpace',
+          displayName: 'workSpace',
+        },
+      ],
     },
     // {
     //   name: 'dashboard',
@@ -31,6 +31,5 @@ export default {
     //     icon: 'vuestic-iconset-dashboard',
     //   },
     // },
-   
   ] as INavigationRoute[],
 }

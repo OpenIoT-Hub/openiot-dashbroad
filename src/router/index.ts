@@ -13,16 +13,16 @@ const routes: Array<RouteRecordRaw> = [
     redirect: { name: 'workSpace' },
   },
   {
-    name:'homePage',
-    path:'/homePage',
-    component:AppLayout,
-    children:[
+    name: 'homePage',
+    path: '/homePage',
+    component: AppLayout,
+    children: [
       {
-        name:'workSpace',
-        path:'workSpace',
-        component:() => import('../pages/homePage/workSpace.vue')
-      }
-    ]
+        name: 'workSpace',
+        path: 'workSpace',
+        component: () => import('../pages/homePage/workSpace.vue'),
+      },
+    ],
   },
   {
     name: 'admin',
