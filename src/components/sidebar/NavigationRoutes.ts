@@ -34,7 +34,7 @@ export default {
     },
     {
       name: 'DeviceListPage',
-      displayName: 'Device',
+      displayName: 'device',
       meta: {
         icon: 'devices',
       },
@@ -42,7 +42,7 @@ export default {
       children: [
         // {
         //   name: 'From',
-        //   displayName: 'Device Detail',
+        //   displayName: 'device Detail',
         // },
       ],
     },
