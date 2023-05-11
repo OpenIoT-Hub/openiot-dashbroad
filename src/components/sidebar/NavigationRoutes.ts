@@ -24,6 +24,36 @@ export default {
         },
       ],
     },
+    {
+      name: 'VisualizationPage',
+      displayName: 'Data Analyse',
+      meta: {
+        icon: 'insert_chart',
+      },
+      children: [],
+    },
+    {
+      name: 'DeviceListPage',
+      displayName: 'Device',
+      meta: {
+        icon: 'devices',
+      },
+      // FIXME 添加子层级列表导致无响应问题
+      children: [
+        // {
+        //   name: 'From',
+        //   displayName: 'Device Detail',
+        // },
+      ],
+    },
+    {
+      name: 'UserInfoPage',
+      displayName: 'User',
+      meta: {
+        icon: 'vuestic-iconset-user',
+      },
+      children: [],
+    },
     // {
     //   name: 'dashboard',
     //   displayName: 'menu.dashboard',
