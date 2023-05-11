@@ -10,7 +10,7 @@ import UIRoute from '../pages/admin/ui/route'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
-    redirect: { name: 'workSpace' },
+    redirect: { name: 'not-found-simple' },
   },
   {
     name: 'homePage',
