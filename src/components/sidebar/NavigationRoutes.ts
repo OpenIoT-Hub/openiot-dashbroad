@@ -33,17 +33,16 @@ export default {
       children: [],
     },
     {
-      name: 'DeviceListPage',
+      name: 'device',
       displayName: 'device',
       meta: {
         icon: 'devices',
       },
-      // FIXME 添加子层级列表导致无响应问题
       children: [
-        // {
-        //   name: 'From',
-        //   displayName: 'device Detail',
-        // },
+        {
+          name: 'list',
+          displayName: 'Device List',
+        },
       ],
     },
     {
