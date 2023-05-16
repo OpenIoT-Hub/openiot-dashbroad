@@ -100,7 +100,7 @@ export default {
 .wrap {
   position: relative;
   height: 550px;
-  width: 990px;
+  width: 75%;
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;

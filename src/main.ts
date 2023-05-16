@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
 import i18n from './i18n'
-import { createVuestic, createIconsConfig } from "vuestic-ui";
-import "vuestic-ui/css";
-import "material-design-icons-iconfont/dist/material-design-icons.min.css";
+import { createVuestic, createIconsConfig } from 'vuestic-ui'
+import 'vuestic-ui/css'
+import 'material-design-icons-iconfont/dist/material-design-icons.min.css'
 import { createGtm } from '@gtm-support/vue-gtm'
 
 import stores from './stores'

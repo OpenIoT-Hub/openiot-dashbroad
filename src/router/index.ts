@@ -10,19 +10,31 @@ import UIRoute from '../pages/admin/ui/route'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
-    redirect: { name: 'workSpace' },
+    redirect: { name: 'not-found-simple' },
   },
   {
-    name:'homePage',
-    path:'/homePage',
-    component:AppLayout,
-    children:[
+    name: 'home',
+    path: '/home',
+    component: AppLayout,
+    children: [
       {
-        name:'workSpace',
-        path:'workSpace',
-        component:() => import('../pages/homePage/workSpace.vue')
-      }
-    ]
+        name: 'workSpace',
+        path: 'workSpace',
+        component: () => import('../pages/home/workSpace.vue'),
+      },
+    ],
+  },
+  {
+    name: 'device',
+    path: '/device',
+    component: AppLayout,
+    children: [
+      {
+        name: 'list',
+        path: 'list',
+        component: () => import('../pages/device/DeviceList.vue'),
+      },
+    ],
   },
   {
     name: 'admin',
