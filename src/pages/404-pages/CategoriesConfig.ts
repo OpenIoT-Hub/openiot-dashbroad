@@ -4,7 +4,7 @@ export default [
     items: [
       {
         itemName: 'Dashboard',
-        itemLink: '/admin/dashboard',
+        itemLink: '/home/workSpace',
       },
     ],
   },

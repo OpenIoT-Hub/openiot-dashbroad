@@ -5,27 +5,14 @@
       <span style="font-size: 16px; font-weight: bold;">New Record</span>
       <a href="" style="font-size: 12px;">查看更多</a>
     </div>
-    <va-tabs class="options" v-model="tabValue">
-      <va-tab v-for="item in tabOption" :key="item.id">
-        {{ item }}
-      </va-tab>
+    <va-tabs v-model="value" class="options">
+      <template #tabs>
+        <va-tab v-for="tab in tabOption" :key="tab">
+          {{ tab }}
+        </va-tab>
+      </template>
     </va-tabs>
-    <va-list style="margin-top: 20px;">
-      <div style="display: flex; flex-direction: row; ">
-        <va-list-label style="font-size: 16px; font-weight: bold; color: black; margin-right: 30px;">排名</va-list-label>
-        <va-list-label style="font-size: 16px; font-weight: bold; color: black; margin-right: 90px;">内容标题</va-list-label>
-        <va-list-label style="font-size: 16px; font-weight: bold; color: black; margin-right: 30px;">点击量</va-list-label>
-        <va-list-label style="font-size: 16px; font-weight: bold; color: black;">日涨量</va-list-label>
-      </div>
-      <va-item v-for="item in recordItem" :key="item.id">
-        <va-item-label>
-          {{ item.id }}
-        </va-item-label>
-        <va-item-section>
-          {{ item.content }}
-        </va-item-section>
-      </va-item>
-    </va-list>
+    <va-data-table :fields="recordDataTitle" :items="recordItem" virtual-scroller style="height: 300px; width: 90%;"/>
   </div>
 </template>
 
@@ -39,14 +26,75 @@ export default {
   data() {
     //这里存放数据
     return {
-      tabOption: ["图片","文字","视频"],
-      recordItem:[
+      value: 0,
+      tabOption: ["图片", "文字", "视频"],
+      recordDataTitle: [
         {
-          id:1,
-          content:"1111111111111",
-          clickNum:5689,
-          riseNum:66
-        }
+          name: 'rank',
+          title: '排名'
+        },
+        {
+          name:'title',
+          title:'标题'
+        },
+        {
+          name:'clickNum',
+          title:'点击量'
+        },
+        {
+          name:'riseNum',
+          title:'日涨量'
+        },
+      ],
+      recordItem: [
+        {
+          rank:1,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:2,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:3,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:4,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:5,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:6,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:7,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
+        {
+          rank:8,
+          title:'经济日报：财政政策要精准...',
+          clickNum:'346.5W+',
+          riseNum:'35%'
+        },
       ]
     };
   },
@@ -79,13 +127,12 @@ export default {
 //@import url(); 引入公共css类
 .wrap {
   position: relative;
-  height: 388px;
-  width: 462px;
   background-color: white;
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .title {
     width: 100%;
 
@@ -97,7 +144,6 @@ export default {
   }
 
   .options {
-
     width: 150px;
     font-size: 12px;
     background-color: #F4F5FA;

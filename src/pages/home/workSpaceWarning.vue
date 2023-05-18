@@ -8,7 +8,9 @@
     <va-divider style="position: relative; margin-bottom: 20px;"></va-divider>
     <div class="statistic">
       <div class="item" v-for="item in statistic" :key="item.id">
-        <div style="height: 60px; width: 60px; border-radius: 60px; background-color: #F4F5FA;"></div>
+        <div style="height: 60px; width: 60px; border-radius: 60px; background-color: #F4F5FA;display: flex;align-items: center; justify-content: center;">
+          <va-icon :name="item.icon" :color="item.iconColor" style="font-size: 30px;"></va-icon>
+        </div>
         <div
           style="display: flex; flex-direction: column;align-items: center;justify-content: space-around; margin-left: 20px;">
           <span>{{ item.title }}</span>
@@ -46,25 +48,29 @@ export default {
         {
           id: 1,
           title: '今日警报数',
-          icon: '',
+          icon: 'entypo-attention',
+          iconColor:'#7797F7',
           num: '373W个'
         },
         {
           id: 1,
-          title: '今日警报数',
-          icon: '',
+          title: '警报解决树',
+          icon: 'entypo-pencil',
+          iconColor:'#DE79FE',
           num: '373W个'
         },
         {
           id: 1,
-          title: '今日警报数',
-          icon: '',
+          title: '待解决个数',
+          icon: 'entypo-chat',
+          iconColor:'#FDAC7E',
           num: '373W个'
         },
         {
           id: 1,
-          title: '今日警报数',
-          icon: '',
+          title: '同比变化',
+          icon: 'entypo-up',
+          iconColor:'#36B2F3',
           num: '373W个'
         }
       ]
@@ -100,7 +106,7 @@ export default {
 .wrap {
   position: relative;
   height: 550px;
-  width: 75%;
+  // width: 1020px;
   background-color: white;
   padding-left: 20px;
   padding-right: 20px;
