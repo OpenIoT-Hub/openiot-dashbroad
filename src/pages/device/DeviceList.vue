@@ -65,7 +65,7 @@
     margin-top: 20px;
   }
   .device_list_function va-icon {
-   margin-left: 4px;
-   margin-right: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 </style>

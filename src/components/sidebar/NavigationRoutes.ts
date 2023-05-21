@@ -43,6 +43,18 @@ export default {
           name: 'list',
           displayName: 'Device List',
         },
+        {
+          name: 'table',
+          displayName: 'Device Table',
+        },
+        {
+          name: 'map',
+          displayName: 'Device Map',
+        },
+        {
+          name: 'form',
+          displayName: 'Create Device',
+        },
       ],
     },
     {

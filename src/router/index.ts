@@ -13,6 +13,10 @@ const routes: Array<RouteRecordRaw> = [
     redirect: { name: 'not-found-simple' },
   },
   {
+    path: '/',
+    redirect: '/home/workSpace',
+  },
+  {
     name: 'home',
     path: '/home',
     component: AppLayout,
@@ -33,6 +37,21 @@ const routes: Array<RouteRecordRaw> = [
         name: 'list',
         path: 'list',
         component: () => import('../pages/device/DeviceList.vue'),
+      },
+      {
+        name: 'table',
+        path: 'table',
+        redirect: '/admin/tables/markup',
+      },
+      {
+        name: 'map',
+        path: 'map',
+        redirect: '/admin/maps/leaflet-maps',
+      },
+      {
+        name: 'form',
+        path: 'form',
+        component: () => import('../pages/device/DeviceForm.vue'),
       },
     ],
   },
