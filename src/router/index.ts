@@ -46,12 +46,13 @@ const routes: Array<RouteRecordRaw> = [
       {
         name: 'map',
         path: 'map',
-        redirect: '/admin/maps/leaflet-maps',
+        // redirect: '/admin/maps/leaflet-maps',
+        component: () => import('../pages/device/map/DeviceMapPage.vue'),
       },
       {
         name: 'form',
         path: 'form',
-        component: () => import('../pages/device/DeviceForm.vue'),
+        component: () => import('../pages/device/form/DeviceFormPage.vue'),
       },
     ],
   },
