@@ -1,63 +1,102 @@
-<!--  -->
 <template>
-  <div class="wrap">
-    <div class="title">警报占比</div>
+  <div class="charts">
+    <!-- <div class="row">
+      <div class="flex md6 xs12">
+        <va-card v-if="barChartDataGenerated" class="chart-widget">
+          <va-card-title>{{ t('charts.verticalBarChart') }}</va-card-title>
+          <va-card-content>
+            <va-chart :data="barChartDataGenerated" type="bar" />
+          </va-card-content>
+        </va-card>
+      </div>
+
+      <div class="flex md6 xs12">
+        <va-card v-if="horizontalBarChartDataGenerated" class="chart-widget">
+          <va-card-title>{{ t('charts.horizontalBarChart') }}</va-card-title>
+          <va-card-content>
+            <va-chart :data="horizontalBarChartDataGenerated" type="horizontal-bar" />
+          </va-card-content>
+        </va-card>
+      </div>
+    </div> -->
+    <!-- 
+    <div class="row">
+      <div class="flex md12 xs12">
+        <va-card v-if="lineChartDataGenerated" class="chart-widget">
+          <va-card-title>{{ t('charts.lineChart') }}</va-card-title>
+          <va-card-content>
+            <va-chart :data="lineChartDataGenerated" type="line" />
+          </va-card-content>
+        </va-card>
+      </div>
+    </div> -->
+
+    <!-- <div class="flex md6 xs12">
+        <va-card v-if="pieChartDataGenerated" class="chart-widget">
+          <va-card-title>{{ t('charts.pieChart') }}</va-card-title>
+          <va-card-content>
+            <va-chart :data="pieChartDataGenerated" type="pie" />
+          </va-card-content>
+        </va-card>
+      </div> -->
+
+    <div class="wrap">
+      <div style="font-weight: bold; font-size: 16px;">警报占比</div>
+      <div class="dChart">
+        <va-chart   :data="doughnutChartDataGenerated" type="doughnut" />
+      </div>
+
+    </div>
+
+
+
+    <!-- <div class="row">
+      <div class="flex md12 xs12">
+        <va-card v-if="bubbleChartDataGenerated" class="chart-widget">
+          <va-card-title>{{ t('charts.bubbleChart') }}</va-card-title>
+          <va-card-content>
+            <va-chart :data="bubbleChartDataGenerated" type="bubble" />
+          </va-card-content>
+        </va-card>
+      </div>
+    </div> -->
   </div>
 </template>
 
-<script>
-  //这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
-  //例如：import 《组件名称》 from '《组件路径》';
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+import { useChartData } from '../../data/charts/composables/useChartData'
+import {
+  lineChartData,
+  doughnutChartData,
+  bubbleChartData,
+  pieChartData,
+  barChartData,
+  horizontalBarChartData,
+} from '../../data/charts'
+import VaChart from '../../components/va-charts/VaChart.vue'
 
-  export default {
-    //import引入的组件需要注入到对象中才能使用
-    data() {
-      return {
-        chartdata: {
-          labels: ['January', 'February'],
-          datasets: [
-            {
-              label: 'Data One',
-              backgroundColor: '#f87979',
-              data: [40, 20],
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-        },
-      }
-    },
-    //监听属性 类似于data概念
-    computed: {},
-    //监控data中的数据变化
-    watch: {},
-    //方法集合
-    methods: {},
-    //生命周期 - 创建完成（可以访问当前this实例）
-    created() {},
-    //生命周期 - 挂载完成（可以访问DOM元素）
-    mounted() {},
-    beforeCreate() {}, //生命周期 - 创建之前
-    beforeMount() {}, //生命周期 - 挂载之前
-    beforeUpdate() {}, //生命周期 - 更新之前
-    updated() {}, //生命周期 - 更新之后
-    beforeDestroy() {}, //生命周期 - 销毁之前
-    destroyed() {}, //生命周期 - 销毁完成
-    activated() {}, //如果页面有keep-alive缓存功能，这个函数会触发
-  }
+const lineChartDataGenerated = useChartData(lineChartData, 0.7)
+const doughnutChartDataGenerated = useChartData(doughnutChartData)
+const bubbleChartDataGenerated = useChartData(bubbleChartData, 0.9)
+const pieChartDataGenerated = useChartData(pieChartData)
+const barChartDataGenerated = useChartData(barChartData)
+const horizontalBarChartDataGenerated = useChartData(horizontalBarChartData)
+
+const { t } = useI18n()
 </script>
-<style lang="scss" scoped>
-  //@import url(); 引入公共css类
-  .wrap {
-    height: 408px;
-    background-color: white;
-    padding: 20px;
 
-    .title {
-      font-size: 16px;
-      font-weight: bold;
-    }
+<style lang="scss">
+.wrap{
+  position: relative;
+  height: 40vh;
+  width: 31vw;
+  background-color: white;
+  padding: 20px;
+  .dChart{
+    position: relative;
+    height: 35vh;
+    width: 29vw;
   }
+}
 </style>

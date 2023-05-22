@@ -121,6 +121,8 @@
   //@import url(); 引入公共css类
   .wrap {
     position: relative;
+    height: 40vh;
+  width: 30vw;
     background-color: white;
     padding: 20px;
     display: flex;
