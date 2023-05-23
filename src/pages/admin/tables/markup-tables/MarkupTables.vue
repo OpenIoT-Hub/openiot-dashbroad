@@ -70,7 +70,7 @@
   const users = ref(data.slice(0, 8))
 
   function getStatusColor(status: string) {
-    if (status === 'paid') {
+    if (status === 'safety') {
       return 'success'
     }
 

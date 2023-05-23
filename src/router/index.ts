@@ -41,7 +41,8 @@ const routes: Array<RouteRecordRaw> = [
       {
         name: 'table',
         path: 'table',
-        redirect: '/admin/tables/markup',
+        // redirect: '/admin/tables/markup',
+        component: () => import('../pages/device/table/DeviceTable.vue'),
       },
       {
         name: 'map',
