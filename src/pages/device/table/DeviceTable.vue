@@ -6,23 +6,23 @@
         <div class="table-wrapper">
           <table class="va-table va-table--striped va-table--hoverable">
             <thead>
-            <tr>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Address</th>
-              <th>Status</th>
-            </tr>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Status</th>
+              </tr>
             </thead>
 
             <tbody>
-            <tr v-for="user in users" :key="user.id">
-              <td>{{ user.name }}</td>
-              <td>{{ user.email }}</td>
-              <td>{{ user.country }}</td>
-              <td>
-                <va-badge :text="user.status" :color="getStatusColor(user.status)" />
-              </td>
-            </tr>
+              <tr v-for="user in users" :key="user.id">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.country }}</td>
+                <td>
+                  <va-badge :text="user.status" :color="getStatusColor(user.status)" />
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -32,35 +32,35 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
-import data from './data.json'
+  import { ref } from 'vue'
+  import { useI18n } from 'vue-i18n'
+  import data from './data.json'
 
-const { t } = useI18n()
+  const { t } = useI18n()
 
-const users = ref(data.slice(0, 8))
+  const users = ref(data.slice(0, 8))
 
-function getStatusColor(status: string) {
-  if (status === 'safety') {
-    return 'success'
+  function getStatusColor(status: string) {
+    if (status === 'safety') {
+      return 'success'
+    }
+
+    if (status === 'warming') {
+      return 'info'
+    }
+
+    return 'danger'
   }
-
-  if (status === 'warming') {
-    return 'info'
-  }
-
-  return 'danger'
-}
 </script>
 
 <style lang="scss">
-.markup-tables {
-  .table-wrapper {
-    overflow: auto;
-  }
+  .markup-tables {
+    .table-wrapper {
+      overflow: auto;
+    }
 
-  .va-table {
-    width: 100%;
+    .va-table {
+      width: 100%;
+    }
   }
-}
 </style>
