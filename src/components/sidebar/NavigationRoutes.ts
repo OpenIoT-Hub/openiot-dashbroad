@@ -63,7 +63,12 @@ export default {
       meta: {
         icon: 'vuestic-iconset-user',
       },
-      children: [],
+      children: [
+        {
+          name:'Info',
+          displayName:'UserInfo'
+        }
+      ],
     },
     // {
     //   name: 'dashboard',

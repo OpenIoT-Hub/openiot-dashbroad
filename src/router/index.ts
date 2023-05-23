@@ -56,6 +56,18 @@ const routes: Array<RouteRecordRaw> = [
     ],
   },
   {
+    name:'user',
+    path:'/user',
+    component:AppLayout,
+    children:[
+      {
+        name:'Info',
+        path:'Info',
+        component:() => import('../pages/user/userInfo.vue')
+      }
+    ]
+  },
+  {
     name: 'admin',
     path: '/admin',
     component: AppLayout,
