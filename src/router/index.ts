@@ -41,17 +41,19 @@ const routes: Array<RouteRecordRaw> = [
       {
         name: 'table',
         path: 'table',
-        redirect: '/admin/tables/markup',
+        // redirect: '/admin/tables/markup',
+        component: () => import('../pages/device/table/DeviceTable.vue'),
       },
       {
         name: 'map',
         path: 'map',
-        redirect: '/admin/maps/leaflet-maps',
+        // redirect: '/admin/maps/leaflet-maps',
+        component: () => import('../pages/device/map/DeviceMapPage.vue'),
       },
       {
         name: 'form',
         path: 'form',
-        component: () => import('../pages/device/DeviceForm.vue'),
+        component: () => import('../pages/device/form/DeviceFormPage.vue'),
       },
     ],
   },

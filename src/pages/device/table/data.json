@@ -5,7 +5,7 @@
     "email": "mcguireprince@glasstep.com",
     "country": "Swaziland",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3e1579c30d1703632",
@@ -13,7 +13,7 @@
     "email": "deanjennings@glasstep.com",
     "country": "Korea (North)",
     "starred": true,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a38023a44a3b5e934d",
@@ -21,7 +21,7 @@
     "email": "cottonweber@glasstep.com",
     "country": "Mozambique",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a31c6b23082419e5f4",
@@ -37,7 +37,7 @@
     "email": "williamdillard@glasstep.com",
     "country": "Cayman Islands",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3486badb41f9f18b5",
@@ -53,7 +53,7 @@
     "email": "anabarrett@glasstep.com",
     "country": "Rwanda",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3fcff2a76b73e6016",
@@ -61,7 +61,7 @@
     "email": "pamward@glasstep.com",
     "country": "Kuwait",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3b54fc3e9a2570ce8",
@@ -77,7 +77,7 @@
     "email": "allisoncobb@glasstep.com",
     "country": "East Timor",
     "starred": true,
-    "status": "processing"
+    "status": "safety"
   },
   {
     "id": "5d3026a3f22a52e3706ed868",
@@ -85,7 +85,7 @@
     "email": "terriehawkins@glasstep.com",
     "country": "Greenland",
     "starred": false,
-    "status": "processing"
+    "status": "safety"
   },
   {
     "id": "5d3026a32bad267623e706ec",
@@ -93,7 +93,7 @@
     "email": "peckryan@glasstep.com",
     "country": "Belgium",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a37a50452a85d01cbb",
@@ -101,7 +101,7 @@
     "email": "candacepowell@glasstep.com",
     "country": "Yugoslavia",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3ce9f5acf20065037",
@@ -109,7 +109,7 @@
     "email": "wolfepitts@glasstep.com",
     "country": "Bouvet Island",
     "starred": true,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3e3a5afe09338eca5",
@@ -125,7 +125,7 @@
     "email": "michellewolfe@glasstep.com",
     "country": "French Guiana",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3364f517d8f5dbf16",
@@ -133,7 +133,7 @@
     "email": "katinalindsay@glasstep.com",
     "country": "Guyana",
     "starred": true,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a313dedc3cf25404ba",
@@ -141,7 +141,7 @@
     "email": "bridgettlloyd@glasstep.com",
     "country": "Niger",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3a72281322b845f6a",
@@ -149,7 +149,7 @@
     "email": "lethahamilton@glasstep.com",
     "country": "Zimbabwe",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3bd037e491b76f097",
@@ -157,7 +157,7 @@
     "email": "mcclaindoyle@glasstep.com",
     "country": "Switzerland",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a36aa5b7fda077d6ef",
@@ -165,7 +165,7 @@
     "email": "gileslucas@glasstep.com",
     "country": "Bhutan",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a381c974954ce9ab94",
@@ -173,7 +173,7 @@
     "email": "figueroalowery@glasstep.com",
     "country": "Netherlands Antilles",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3c0af2698fcd2a750",
@@ -181,7 +181,7 @@
     "email": "valeriajustice@glasstep.com",
     "country": "Moldova",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a301d5e7c957e6d864",
@@ -189,7 +189,7 @@
     "email": "louiseayala@glasstep.com",
     "country": "India",
     "starred": true,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a31f6f1fd6399aeee6",
@@ -197,7 +197,7 @@
     "email": "kathrinekirby@glasstep.com",
     "country": "Cook Islands",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3e8cb16cd2afa41dd",
@@ -205,7 +205,7 @@
     "email": "brandimorris@glasstep.com",
     "country": "Honduras",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3c52ac7ffb85c892d",
@@ -213,7 +213,7 @@
     "email": "margaretmckenzie@glasstep.com",
     "country": "Jordan",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3c66670f258790358",
@@ -221,7 +221,7 @@
     "email": "janiecollier@glasstep.com",
     "country": "Samoa",
     "starred": true,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3108b6b1d543fb117",
@@ -237,7 +237,7 @@
     "email": "kateallen@glasstep.com",
     "country": "France",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a32be6debb7532cc75",
@@ -245,7 +245,7 @@
     "email": "jeannecross@glasstep.com",
     "country": "Anguilla",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3cc16b4cd36e3a7b4",
@@ -253,7 +253,7 @@
     "email": "stewarthanson@glasstep.com",
     "country": "Western Sahara",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3d3496dd200d5f6af",
@@ -261,7 +261,7 @@
     "email": "beulahcastaneda@glasstep.com",
     "country": "Malaysia",
     "starred": true,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a3187e74fcd18a7918",
@@ -277,7 +277,7 @@
     "email": "murielbutler@glasstep.com",
     "country": "Pitcairn",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a35b04715a89693024",
@@ -293,7 +293,7 @@
     "email": "cortezsingleton@glasstep.com",
     "country": "Morocco",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a30ab099fe57fe76ad",
@@ -333,7 +333,7 @@
     "email": "enidstephens@glasstep.com",
     "country": "Greece",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a34b33074f1ee12e73",
@@ -373,7 +373,7 @@
     "email": "lindseyburgess@glasstep.com",
     "country": "Mali",
     "starred": false,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3fbfadf6c0b971769",
@@ -381,7 +381,7 @@
     "email": "lovechristian@glasstep.com",
     "country": "Andorra",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   },
   {
     "id": "5d3026a35c48c5e49f1930e0",
@@ -389,7 +389,7 @@
     "email": "juliasawyer@glasstep.com",
     "country": "Hungary",
     "starred": true,
-    "status": "processing"
+    "status": "warming"
   },
   {
     "id": "5d3026a3fc275278bd752b31",
@@ -397,6 +397,6 @@
     "email": "mayerwarren@glasstep.com",
     "country": "Latvia",
     "starred": false,
-    "status": "rejected"
+    "status": "error"
   }
 ]

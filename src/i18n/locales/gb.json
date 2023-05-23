@@ -188,7 +188,7 @@
       "title": "Notifications",
       "gray": "Processing",
       "dark": "New Label",
-      "success": "Paid",
+      "success": "safety",
       "successMessage": "You successfully read this important alert message.",
       "info": "Info",
       "infoMessage": "This alert needs your attention, but it's not super important.",
