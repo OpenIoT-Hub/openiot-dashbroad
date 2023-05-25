@@ -40,10 +40,6 @@ export default {
       },
       children: [
         {
-          name: 'list',
-          displayName: 'Device List',
-        },
-        {
           name: 'table',
           displayName: 'Device Table',
         },

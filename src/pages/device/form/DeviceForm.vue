@@ -21,11 +21,19 @@
     <template #step-content-0>
       <div class="form-elements">
         <div class="row">
-          <div class="flex md4 sm6 xs12" style="max-width: 300px">
+          <div class="flex xs12" style="max-width: 300px">
             <form>
-              <va-input v-model="value" class="mb-6 md4 sm6" label="name" placeholder="Device Name" />
-              <va-input v-model="value" class="mb-6 md4 sm6" label="address" placeholder="Device Address" />
-              <va-input v-model="value" class="mb-6 md4 sm6" label="type" placeholder="Device Type" />
+              <div class="row">
+                <div class="flex md4 sm6 xs12" style="max-width: 300px">
+                  <va-input v-model="value" label="name" placeholder="Device Name" />
+                </div>
+                <div class="flex md4 sm6 xs12" style="max-width: 300px">
+                  <va-input v-model="value" label="address" placeholder="Device Address" />
+                </div>
+                <div class="flex md4 sm6 xs12" style="max-width: 300px">
+                  <va-input v-model="value" label="type" placeholder="Device Type" />
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -180,11 +188,6 @@
 
   .step-button--completed {
     color: rgb(131, 58, 180);
-  }
-
-  va-button {
-    color: black;
-    background-color: black;
   }
 
   fieldset {
