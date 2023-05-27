@@ -69,7 +69,7 @@ const pieChartDataGenerated = useChartData(pieChartData)
 const barChartDataGenerated = useChartData(barChartData)
 const horizontalBarChartDataGenerated = useChartData(horizontalBarChartData)
 
-const username = 'ruarua'
+const username = '管理员'
 const statistic = [
   {
     id: 1,

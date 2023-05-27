@@ -282,7 +282,7 @@ export default {
     position: relative;
     margin-top: 20px;
     height: 19vh;
-    background-image: url(../../static/image3.jpg),;
+    background-image: url(../../static/image3.png),;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

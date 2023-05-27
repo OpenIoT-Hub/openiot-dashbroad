@@ -17,6 +17,8 @@
         <va-list-item-section icon>
           <div class="device_list_function">
             <va-icon name="remove_red_eye" color="background-tertiary" />
+
+
             <a href="/device/detail">
               <va-icon name="keyboard_arrow_right" color="background-tertiary" size="large" />
             </a>
