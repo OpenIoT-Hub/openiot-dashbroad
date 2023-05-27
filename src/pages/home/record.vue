@@ -2,7 +2,7 @@
 <template>
   <div class="wrap">
     <div class="title">
-      <span style="font-size: 16px; font-weight: bold">New Record</span>
+      <span style="font-size: 16px; font-weight: bold">新记录</span>
       <a href="" style="font-size: 12px">查看更多</a>
     </div>
     <va-tabs v-model="value" class="options">

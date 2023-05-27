@@ -18,7 +18,7 @@
       <div class="function">
         <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between">
           <div style="font-size: 16px; font-weight: bold">基本功能</div>
-          <a href="" style="font-size: 12px">adjust</a>
+          <a href="" style="font-size: 12px">查看更多</a>
         </div>
         <div class="list">
           <div class="item" v-for="item in functionItem" :key="item.id">
@@ -282,7 +282,7 @@ export default {
     position: relative;
     margin-top: 20px;
     height: 19vh;
-    background-image: url(../../static/image.png);
+    background-image: url(../../static/image3.jpg),;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

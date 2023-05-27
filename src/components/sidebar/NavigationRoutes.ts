@@ -13,20 +13,20 @@ export default {
   routes: [
     {
       name: 'home',
-      displayName: 'Home',
+      displayName: '主页',
       meta: {
         icon: 'vuestic-iconset-dashboard',
       },
       children: [
         {
           name: 'workSpace',
-          displayName: 'workSpace',
+          displayName: '仪表盘',
         },
       ],
     },
     {
       name: 'VisualizationPage',
-      displayName: 'Data Analyse',
+      displayName: '数据可视化',
       meta: {
         icon: 'insert_chart',
       },
@@ -34,35 +34,35 @@ export default {
     },
     {
       name: 'device',
-      displayName: 'device',
+      displayName: '设备',
       meta: {
         icon: 'devices',
       },
       children: [
         {
           name: 'table',
-          displayName: 'Device Table',
+          displayName: '设备表格',
         },
         {
           name: 'map',
-          displayName: 'Device Map',
+          displayName: '设备地图',
         },
         {
           name: 'form',
-          displayName: 'Create Device',
+          displayName: '新建设备',
         },
       ],
     },
     {
       name: 'UserInfoPage',
-      displayName: 'User',
+      displayName: '用户',
       meta: {
         icon: 'vuestic-iconset-user',
       },
       children: [
         {
           name:'Info',
-          displayName:'UserInfo'
+          displayName:'用户信息'
         }
       ],
     },
